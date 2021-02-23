@@ -9,10 +9,19 @@ const routes = [
         name: 'Test',
         component: components.Test,
         meta: {
-            title: 'This is a test page',
+            title: 'Ping Api',
             auth: false,
         },
     },
+    {
+        path: '/',
+        name: 'Login',
+        component: components.Login,
+        meta: {
+            title: 'Login',
+            auth: false,
+        },
+    }
 ];
 
 Vue.use(VueRouter);
